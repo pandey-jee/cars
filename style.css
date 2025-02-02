@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #3f3e3e;
+}
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 150px;
+    color: whitesmoke;
+    font-family: "Hachi Maru Pop", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box {
+    
+    width: 150px;
+    height: 500px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.box span {
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.box img {
+    height: 500px;
+}
+
+.box.glowing {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+    /* Glowing effect */
+}
